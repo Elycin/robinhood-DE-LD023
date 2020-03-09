@@ -1,0 +1,13 @@
+[robinhood]
+username =
+password =
+multi_factor_secret =
+
+[display]
+COM_PORT = COM3
+BAUD = 9600
+WIDTH = 20
+
+[ticker]
+market_open_refresh_rate = 1
+market_after_hours_refresh_rate = 5
