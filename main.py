@@ -99,7 +99,7 @@ while True:
 
     # Build change message
     if change == 0.0:
-        write_to_line(ser, 3, "Equity hasn't changed")
+        write_to_line(ser, 3, "Status", "Not Trading")
     else:
         motion = ("Gain", "Loss")[change < 0.0]
         write_to_line(ser, 3, "Daily %s" % motion, "${:0.2f}".format(change))
