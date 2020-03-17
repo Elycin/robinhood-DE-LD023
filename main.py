@@ -100,6 +100,7 @@ while True:
     # Build change message
     if change == 0.0:
         write_to_line(ser, 3, "Status", "Not Trading")
+        refresh_rate = float(config['ticker']['not_trading_refresh_rate'])
     else:
         motion = ("Gain", "Loss")[change < 0.0]
         write_to_line(ser, 3, "Daily %s" % motion, "${:0.2f}".format(change))

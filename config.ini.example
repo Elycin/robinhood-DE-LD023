@@ -11,3 +11,4 @@ WIDTH = 20
 [ticker]
 market_open_refresh_rate = 1
 market_after_hours_refresh_rate = 5
+not_trading_refresh_rate = 60
